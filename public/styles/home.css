@@ -1,0 +1,37 @@
+
+.body-home {
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    max-width: 1150px;
+    margin: auto;
+   
+}
+
+.news-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.no-results-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+}
+
+.spin-loader-more-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+
+@media (max-width: 1150px) {
+    .body-home h2 {
+        text-align: center;
+    }
+}
