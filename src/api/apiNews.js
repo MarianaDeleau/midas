@@ -6,5 +6,5 @@ const getNews = async() => {
     return response
 }
 
-getNews()
+
 export {getNews}    
