@@ -1,32 +1,35 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
+import PropTypes from "prop-types";
 
 const LineSeparator = (props) => {
+  const { style, size } = props;
 
-   const { style, size } = props
-
-   return (
-      <div
-         style={{ ...{ width: size === 'big' ? '100%' : '100px' }, ...styles.container, ...style }}
-      />
-   )
-}
+  return (
+    <div
+      style={{
+        ...{ width: size === "big" ? "100%" : "100px" },
+        ...styles.container,
+        ...style,
+      }}
+    />
+  );
+};
 
 const styles = {
-   container: {
-      margin: '20px auto',
-      height: 1,
-      backgroundColor: '#535C68'
-   }
-}
+  container: {
+    margin: "20px auto",
+    height: 1,
+    backgroundColor: "#535C68",
+  },
+};
 
 LineSeparator.propTypes = {
-   style: PropTypes.any,
-   size: PropTypes.string
-}
+  style: PropTypes.any,
+  size: PropTypes.string,
+};
 
 LineSeparator.defaultProps = {
-   size: 'small'
-}
+  size: "small",
+};
 
-export default LineSeparator
+export default LineSeparator;

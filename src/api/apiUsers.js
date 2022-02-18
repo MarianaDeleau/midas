@@ -1,5 +1,3 @@
-//simulacion de llamado a la base de datos de usuarios. 
+//simulacion de llamado a la base de datos de usuarios.
 
-
-export const Users = [{user:'admin', pass:'123123'}]
-
+export const Users = [{ user: "admin", pass: "123123" }];

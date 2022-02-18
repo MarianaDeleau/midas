@@ -1,10 +1,8 @@
-import {apiNews} from '../utils/axios'
+import { apiNews } from "../utils/axios";
 
-const getNews = async() => {
+const getNews = async () => {
+  const response = await apiNews.get();
+  return response;
+};
 
-    const response = await apiNews.get()
-    return response
-}
-
-
-export {getNews}    
+export { getNews };
